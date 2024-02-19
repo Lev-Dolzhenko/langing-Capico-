@@ -1,0 +1,56 @@
+body {
+  font-family: $nekst;
+  color: $colorWhite;
+  background-color: $colorBlack;
+  font-size: 16px;
+}
+
+a {
+  transition: color 0.2s linear;
+
+  &:hover {
+    // color: $fff;
+  }
+}
+
+.container {
+  max-width: 1580px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+.title1 {
+  font-size: 102px;
+  font-weight: 400;
+  line-height: 98%;
+}
+
+.titleH2 {
+  // font-size: clamp();
+  // font-weight: ;
+  // line-height: ;
+}
+
+.titleH3 {
+  // font-size: clamp();
+  // font-weight: ;
+  // line-height: ;
+}
+
+.subtitle {
+  &_info {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 113%;
+
+    span {
+        background-color: $colorAccent;
+        border-radius: 10px;
+        padding: 0 5px;
+    }
+  }
+}

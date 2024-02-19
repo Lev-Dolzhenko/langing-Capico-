@@ -1,0 +1,70 @@
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__title {
+  max-width: 765px;
+
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.title1 {
+}
+.title1_info {
+}
+.info__subtitle {
+  max-width: 400px;
+}
+.subtitle {
+}
+.subtitle_info {
+}
+.info__button {
+  position: relative;
+
+  border: 2px solid $colorAccent;
+  height: 83px;
+  width: 83px;
+  border-radius: 50%;
+
+  margin-top: 20px;
+
+  .info__button_arrow {
+    content: url(/content/header/arrowButton.svg);
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -180%);
+  }
+
+  .info__button_circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    height: 83px;
+    width: 83px;
+    border-radius: 50%;
+    border: 1px solid $colorAccent;
+    box-shadow: 0 0 5px $colorAccent;
+    opacity: 0.5;
+  }
+}
+
+.arrowAnimationHeaderButton {
+  animation: headerButton 0.5s ease-out forwards;
+}
+
+.arrowAnimationHeaderButtonReverse {
+    animation: headerButtonReverse 0.5s ease-out forwards;
+}
+
+.circleAnimationHeaderButtom {
+  animation: circleAnimationHeader 0.5s ease-out forwards;
+}
+
+.circleAnimationHeaderReverse {
+    animation: circleAnimationHeaderReverse 0.5s ease-out forwards;
+}

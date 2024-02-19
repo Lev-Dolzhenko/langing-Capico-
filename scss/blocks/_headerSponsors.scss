@@ -1,0 +1,46 @@
+.header__sponsors {
+  margin-top: 173px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    background: rgb(14, 9, 21);
+    // padding: 30px 60px;
+
+    max-width: 256px;
+    height: 100px;
+    width: 100%;
+
+    &:last-child {
+      position: relative;
+      img {
+        opacity: 0.5;
+      }
+
+      &::after {
+        content: "Soon";
+        position: absolute;
+        right: 18px;
+        top: 14px;
+
+        border-radius: 8px;
+        background: rgb(81, 50, 133);
+
+        padding: 3px 8px;
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 113%;
+      }
+    }
+  }
+}

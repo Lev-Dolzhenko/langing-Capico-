@@ -1,0 +1,20 @@
+/* BASE */
+
+@import '/fonts/nekst/stylesheet.css';
+@import './base/animations';
+@import './base/mixins';
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/navIcon';
+
+/* BASE */
+
+/* BLOCK */
+
+@import './blocks/headerNav';
+@import './blocks/headerInfo';
+@import './blocks/headerSponsors';
+
+
+/* BLOCK */

@@ -1,0 +1,43 @@
+@keyframes headerButton {
+  from {
+    transform: translate(-50%, -180%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -85%);
+    opacity: 1;
+  }
+}
+
+@keyframes headerButtonReverse {
+  from {
+    transform: translate(-50%, -85%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -180%);
+    opacity: 0;
+  }
+}
+
+@keyframes circleAnimationHeader {
+  from {
+    height: 83px;
+    width: 83px;
+  }
+  to {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@keyframes circleAnimationHeaderReverse {
+  from {
+    height: 150px;
+    width: 150px;
+  }
+  to {
+    height: 83px;
+    width: 83px;
+  }
+}
