@@ -1,3 +1,5 @@
+//header
+
 @keyframes headerButton {
   from {
     transform: translate(-50%, -180%);
@@ -39,5 +41,73 @@
   to {
     height: 83px;
     width: 83px;
+  }
+}
+
+//manage
+
+@keyframes boxShadowVideo {
+  from {
+    box-shadow: 0 0 0 $colorAccent;
+  }
+  to {
+    box-shadow: 0 0 5px $colorAccent;
+  }
+}
+
+@keyframes boxShadowVideoReverse {
+  from {
+    box-shadow: 0 0 5px $colorAccent;
+  }
+  to {
+    box-shadow: 0 0 0 $colorAccent;
+  }
+}
+
+@keyframes frameManage {
+  from {
+    transform: translate(-50%, -30%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes frameManageReverse {
+  from {
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -30%);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes overlayVideo {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes overlayVideoReverse {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
   }
 }

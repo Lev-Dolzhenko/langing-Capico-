@@ -1,0 +1,12 @@
+<svg width="1550.000000" height="50.000000" viewBox="0 0 1550 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient id="paint_linear_55_412_0" x1="153.701172" y1="-14.921875" x2="953.957031" y2="85.078125" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF"/>
+			<stop offset="1.000000" stop-color="#5F29B7"/>
+		</linearGradient>
+	</defs>
+	<path id="Subtract" d="M25 1L1525 1C1538.25 1 1549 11.7451 1549 25L1549 50L1550 50L1550 25C1550 11.1929 1538.81 0 1525 0L25 0C11.1929 0 0 11.1929 0 25L0 50L1 50L1 25C1 11.7451 11.7451 1 25 1Z" fill="url(#paint_linear_55_412_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>

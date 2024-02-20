@@ -1,5 +1,11 @@
 /* BASE */
 @import '/fonts/nekst/stylesheet.css';
+/*FONTS*/
+/*FONTS*/
+/*COLORS*/
+/*COLORS*/
+/*MEDIA*/
+/*MEDIA*/
 @-webkit-keyframes headerButton {
   from {
     -webkit-transform: translate(-50%, -180%);
@@ -86,6 +92,142 @@
   to {
     height: 83px;
     width: 83px;
+  }
+}
+@-webkit-keyframes boxShadowVideo {
+  from {
+    -webkit-box-shadow: 0 0 0 rgb(136, 84, 221);
+            box-shadow: 0 0 0 rgb(136, 84, 221);
+  }
+  to {
+    -webkit-box-shadow: 0 0 5px rgb(136, 84, 221);
+            box-shadow: 0 0 5px rgb(136, 84, 221);
+  }
+}
+@keyframes boxShadowVideo {
+  from {
+    -webkit-box-shadow: 0 0 0 rgb(136, 84, 221);
+            box-shadow: 0 0 0 rgb(136, 84, 221);
+  }
+  to {
+    -webkit-box-shadow: 0 0 5px rgb(136, 84, 221);
+            box-shadow: 0 0 5px rgb(136, 84, 221);
+  }
+}
+@-webkit-keyframes boxShadowVideoReverse {
+  from {
+    -webkit-box-shadow: 0 0 5px rgb(136, 84, 221);
+            box-shadow: 0 0 5px rgb(136, 84, 221);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 rgb(136, 84, 221);
+            box-shadow: 0 0 0 rgb(136, 84, 221);
+  }
+}
+@keyframes boxShadowVideoReverse {
+  from {
+    -webkit-box-shadow: 0 0 5px rgb(136, 84, 221);
+            box-shadow: 0 0 5px rgb(136, 84, 221);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 rgb(136, 84, 221);
+            box-shadow: 0 0 0 rgb(136, 84, 221);
+  }
+}
+@-webkit-keyframes frameManage {
+  from {
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes frameManage {
+  from {
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes frameManageReverse {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes frameManageReverse {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes overlayVideo {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes overlayVideo {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes overlayVideoReverse {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes overlayVideoReverse {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
   }
 }
 /* Reset and base styles  */
@@ -178,12 +320,6 @@ legend {
   display: block;
 }
 
-/*FONTS*/
-/*FONTS*/
-/*COLORS*/
-/*COLORS*/
-/*MEDIA*/
-/*MEDIA*/
 body {
   font-family: "Nekst", serif;
   color: #ffffff;
@@ -195,6 +331,44 @@ a {
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
+.default__cover {
+  position: relative !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.default__title {
+  margin-left: 42px;
+}
+
+.default__subtitle {
+  margin-right: 42px;
+}
+
+.default__substract {
+  position: absolute;
+  top: 0;
+}
+
+.overlay_video {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+}
+
 .container {
   max-width: 1580px;
   padding: 0 15px;
@@ -211,6 +385,26 @@ a {
   line-height: 98%;
 }
 
+.title4 {
+  background: linear-gradient(163.61deg, rgb(255, 255, 255), rgb(95, 41, 183));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 113%;
+}
+.title4_manage {
+  text-align: center;
+}
+
+.title5_default {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 93%;
+}
+
 .subtitle_info {
   font-size: 30px;
   font-weight: 400;
@@ -220,6 +414,12 @@ a {
   background-color: rgb(136, 84, 221);
   border-radius: 10px;
   padding: 0 5px;
+}
+.subtitle_default {
+  color: rgb(145, 145, 145);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 103%;
 }
 
 .nav-icon-btn {
@@ -303,7 +503,6 @@ a {
   background-size: cover;
   padding-bottom: 111px;
 }
-
 .header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,6 +695,114 @@ a {
   font-size: 13px;
   font-weight: 400;
   line-height: 113%;
+}
+
+.manage {
+  padding: 93px 0 39px;
+  border-radius: 40px 40px 0 0;
+  -webkit-box-shadow: 0 -10px 10px rgb(136, 84, 221);
+          box-shadow: 0 -10px 10px rgb(136, 84, 221);
+}
+
+.manage__title {
+  max-width: 1038px;
+  margin: 0 auto;
+}
+
+.manage__video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+  max-width: 1030px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.manage__video img {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.manage__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(90, 47, 237)), to(rgb(143, 0, 255)));
+  background: linear-gradient(180deg, rgb(90, 47, 237), rgb(143, 0, 255) 100%);
+  width: 90px;
+  height: 90px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.manage__button img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 1;
+  padding-left: 6px;
+}
+.manage__button:hover {
+  -webkit-box-shadow: 0 0 10px rgb(136, 84, 221);
+          box-shadow: 0 0 10px rgb(136, 84, 221);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.manageVideoAnimation {
+  -webkit-animation: boxShadowVideo 0.1s linear forwards;
+          animation: boxShadowVideo 0.1s linear forwards;
+}
+
+.manageVideoAnimationReverse {
+  -webkit-animation: boxShadowVideoReverse 0.1s linear forwards;
+          animation: boxShadowVideoReverse 0.1s linear forwards;
+}
+
+.manage__frame {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+
+.manageFrameAnimation {
+  -webkit-animation: frameManage 0.5s ease-out forwards;
+          animation: frameManage 0.5s ease-out forwards;
+}
+
+.manageFrameAnimationReverse {
+  -webkit-animation: frameManageReverse 0.5s ease-out forwards;
+          animation: frameManageReverse 0.5s ease-out forwards;
+}
+
+.overlayVideo {
+  -webkit-animation: overlayVideo 0.5s ease-out forwards;
+          animation: overlayVideo 0.5s ease-out forwards;
+}
+
+.overlayVideoReverse {
+  -webkit-animation: overlayVideoReverse 0.5s ease-out forwards;
+          animation: overlayVideoReverse 0.5s ease-out forwards;
 }
 
 /* BLOCK */

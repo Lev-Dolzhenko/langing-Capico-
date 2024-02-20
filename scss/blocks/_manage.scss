@@ -1,0 +1,94 @@
+.manage {
+  padding: 93px 0 39px;
+
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 -10px 10px $colorAccent;
+}
+
+.manage__title {
+  max-width: 1038px;
+  margin: 0 auto;
+}
+
+.manage__video {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 600px;
+  max-width: 1030px;
+  width: 100%;
+
+  border-radius: 10px;
+
+  margin: 0 auto;
+
+  img {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-15deg);
+  }
+}
+
+.manage__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgb(90, 47, 237), rgb(143, 0, 255) 100%);
+
+  width: 90px;
+  height: 90px;
+
+  img {
+    transform: rotate(0deg);
+    z-index: 1;
+    padding-left: 6px;
+  }
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    box-shadow: 0 0 10px $colorAccent;
+    transform: scale(1.1);
+  }
+}
+
+.manageVideoAnimation {
+  animation: boxShadowVideo 0.1s linear forwards;
+}
+
+.manageVideoAnimationReverse {
+  animation: boxShadowVideoReverse 0.1s linear forwards;
+}
+
+.manage__frame {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  z-index: 10;
+}
+
+.manageFrameAnimation {
+  animation: frameManage 0.5s ease-out forwards;
+}
+
+.manageFrameAnimationReverse {
+  animation: frameManageReverse 0.5s ease-out forwards;
+}
+
+.overlayVideo {
+  animation: overlayVideo 0.5s ease-out forwards;
+}
+
+.overlayVideoReverse {
+  animation: overlayVideoReverse 0.5s ease-out forwards;
+}
