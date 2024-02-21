@@ -67,3 +67,29 @@ buttonManage.addEventListener("mouseleave", () => {
   videoManage.classList.remove("manageVideoAnimation");
   videoManage.classList.add("manageVideoAnimationReverse");
 });
+
+//test
+
+const testButton = document.querySelector(".test__button");
+const testButtonCircle = document.querySelector(".test__button-circle");
+const testButtonArrow = document.querySelector('.test__button_arrow')
+
+testButton.addEventListener("mouseover", () => {
+  testButtonCircle.classList.remove("testCircleAnimationReverse");
+  testButtonCircle.classList.add("testCircleAnimation");
+});
+
+testButton.addEventListener("mouseleave", () => {
+  testButtonCircle.classList.remove("testCircleAnimation");
+  testButtonCircle.classList.add("testCircleAnimationReverse");
+});
+
+testButton.addEventListener("mouseover", () => {
+  testButtonArrow.classList.remove("testArrowAnimationReverse");
+  testButtonArrow.classList.add("testArrowAnimation");
+});
+
+testButton.addEventListener("mouseleave", () => {
+  testButtonArrow.classList.remove("testArrowAnimation");
+  testButtonArrow.classList.add("testArrowAnimationReverse");
+});

@@ -1,0 +1,78 @@
+.test {
+  position: relative;
+  padding: 160px 0 100px;
+}
+.test__bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.test__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.test__title {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 250px;
+}
+
+.test__button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 80px;
+
+  border-radius: 70px;
+  background: rgb(95, 41, 183);
+
+  padding: 24px;
+
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 93%;
+
+  transition: box-shadow 0.5s ease-out;
+
+  &:hover {
+    box-shadow: 0 0 10px $colorAccent;
+  }
+}
+
+.test__button-circle {
+  position: relative;
+
+  width: 83px;
+  height: 83px;
+  border: 1px solid $colorWhite;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.test__button_arrow {
+  position: absolute;
+
+  opacity: 0;
+  left: -50%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.testCircleAnimation {
+  animation: buttonCircle 0.5s ease-out forwards;
+}
+
+.testCircleAnimationReverse {
+  animation: buttonCircleReverse 0.5s ease-out forwards;
+}
+
+.testArrowAnimation {
+  animation: buttonArrow 0.5s ease-out forwards;
+}
+
+.testArrowAnimationReverse {
+  animation: buttonArrowReverse 0.5s ease-out forwards;
+}

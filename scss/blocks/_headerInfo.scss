@@ -9,17 +9,11 @@
   margin-top: 80px;
   margin-bottom: 40px;
 }
-.title1 {
-}
-.title1_info {
-}
+
 .info__subtitle {
   max-width: 400px;
 }
-.subtitle {
-}
-.subtitle_info {
-}
+
 .info__button {
   position: relative;
 
@@ -29,6 +23,8 @@
   border-radius: 50%;
 
   margin-top: 20px;
+
+  animation: boxShadowButton 1s ease-in alternate infinite;
 
   .info__button_arrow {
     content: url(/content/header/arrowButton.svg);

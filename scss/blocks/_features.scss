@@ -1,0 +1,20 @@
+.features {
+    .features__row:nth-child(1) {
+        margin-bottom: 240px;
+    }   
+
+    .features__row:nth-child(2) {
+        margin-bottom: 200px;
+    }   
+
+    .features__row:nth-child(3) {
+        align-items: start;
+    }   
+}
+
+.features__col {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
