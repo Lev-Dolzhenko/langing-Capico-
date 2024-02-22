@@ -29,6 +29,11 @@ a {
 
 .default__subtitle {
   margin-right: 42px;
+
+  &_trade {
+    margin-left: auto;
+    margin-top: 20px;
+  }
 }
 
 .default__substract {
@@ -36,7 +41,15 @@ a {
   top: 0;
 }
 
-.overlay {
+.card_title {
+  margin-bottom: 38px;
+}
+
+.card_image {
+  margin-bottom: 130px;
+}
+
+.card_ .overlay {
   &_video {
     position: fixed;
     left: 0;
@@ -82,13 +95,34 @@ a {
     font-weight: 400;
     line-height: 93%;
   }
+
+  &_trade {
+    background: unset;
+    -webkit-text-fill-color: unset;
+  }
 }
 
 .title3 {
+  font-size: 90px;
+  font-weight: 400;
+
   &_partners {
-    font-size: 90px;
-    font-weight: 400;
     line-height: 65%;
+  }
+
+  &_work {
+    background: linear-gradient(
+      165.43deg,
+      rgb(255, 255, 255),
+      rgb(95, 41, 183)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 103%;
+
+    padding-left: 20px;
+    padding-top: 20px;
   }
 
   &_test {
@@ -126,6 +160,12 @@ a {
     font-weight: 400;
     line-height: 93%;
   }
+}
+
+.title6 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 93%;
 }
 
 .subtitle {
@@ -169,5 +209,18 @@ a {
     font-weight: 400;
     line-height: 100%;
     opacity: 0.5;
+  }
+
+  &_work {
+    color: rgb(183, 177, 196);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 125%;
+  }
+
+  &_trade {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 120%;
   }
 }

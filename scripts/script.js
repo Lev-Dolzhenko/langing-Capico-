@@ -75,21 +75,62 @@ const testButtonCircle = document.querySelector(".test__button-circle");
 const testButtonArrow = document.querySelector('.test__button_arrow')
 
 testButton.addEventListener("mouseover", () => {
-  testButtonCircle.classList.remove("testCircleAnimationReverse");
-  testButtonCircle.classList.add("testCircleAnimation");
+  testButtonCircle.classList.remove("createCircleAnimationReverse");
+  testButtonCircle.classList.add("createCircleAnimation");
 });
 
 testButton.addEventListener("mouseleave", () => {
-  testButtonCircle.classList.remove("testCircleAnimation");
-  testButtonCircle.classList.add("testCircleAnimationReverse");
+  testButtonCircle.classList.remove("createCircleAnimation");
+  testButtonCircle.classList.add("createCircleAnimationReverse");
 });
 
 testButton.addEventListener("mouseover", () => {
-  testButtonArrow.classList.remove("testArrowAnimationReverse");
-  testButtonArrow.classList.add("testArrowAnimation");
+  testButtonArrow.classList.remove("createArrowAnimationReverse");
+  testButtonArrow.classList.add("createArrowAnimation");
 });
 
 testButton.addEventListener("mouseleave", () => {
-  testButtonArrow.classList.remove("testArrowAnimation");
-  testButtonArrow.classList.add("testArrowAnimationReverse");
+  testButtonArrow.classList.remove("createArrowAnimation");
+  testButtonArrow.classList.add("createArrowAnimationReverse");
+});
+
+//trade
+
+const tradeButton = document.querySelector(".trade__button");
+const tradeButtonCircle = document.querySelector(".trade__button-circle");
+const tradeButtonArrow = document.querySelector('.trade__button_arrow')
+
+tradeButton.addEventListener("mouseover", () => {
+  tradeButtonCircle.classList.remove("createCircleAnimationReverse");
+  tradeButtonCircle.classList.add("createCircleAnimation");
+});
+
+tradeButton.addEventListener("mouseleave", () => {
+  tradeButtonCircle.classList.remove("createCircleAnimation");
+  tradeButtonCircle.classList.add("createCircleAnimationReverse");
+});
+
+tradeButton.addEventListener("mouseover", () => {
+  tradeButtonArrow.classList.remove("createArrowAnimationReverse");
+  tradeButtonArrow.classList.add("createArrowAnimation");
+});
+
+tradeButton.addEventListener("mouseleave", () => {
+  tradeButtonArrow.classList.remove("createArrowAnimation");
+  tradeButtonArrow.classList.add("createArrowAnimationReverse");
+});
+
+//init swiper work
+
+var swiper = new Swiper(".mySwiper_work", {
+  slidesPerView: 3.5,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next_work",
+    prevEl: ".swiper-button-prev_work ",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
 });

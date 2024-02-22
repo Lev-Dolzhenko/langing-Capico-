@@ -1,0 +1,60 @@
+.mySwiper_work {
+  margin-left: 15% !important;
+
+  margin-top: 70px;
+}
+
+.swiper-wrapper_work {
+  margin-bottom: 50px;
+}
+
+.swiper-slide_work {
+  border: 1px solid rgb(64, 46, 92);
+  border-radius: 40px;
+
+  //   max-height: 455px;
+  height: initial !important;
+
+  padding: 49px 39px 30px;
+
+  opacity: 0.7;
+}
+
+.slide_work-title {
+}
+
+.slide_work-subtitle {
+}
+
+.swiper-scrollbar_work {
+  // background: $colorAccent !important;
+}
+
+.swiper-scrollbar-drag {
+  background-color: rgb(64, 46, 92) !important;
+}
+
+.swiper__wrapper_buttons_work {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 22px;
+}
+
+.swiper-button_work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 94px;
+  height: 94px;
+
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 70px;
+
+  transition: width 0.1s linear;
+
+  &:hover {
+    width: 195px;
+  }
+}

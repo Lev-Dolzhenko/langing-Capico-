@@ -1,27 +1,45 @@
-.test {
+.trade {
   position: relative;
-  padding: 160px 0 100px;
+
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  &::before {
+    content: "";
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 452%;
+    box-shadow: 0px 0px 100px 200px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
 }
-.test__bg {
-  position: absolute;
-  top: 0;
-  z-index: -1;
+
+.trade__title {
+  padding-left: 20px;
+  padding-top: 20px;
+
+  margin-bottom: 170px;
 }
-.test__info {
+
+.trade__subtitle {
+  max-width: 350px;
+
+  padding-left: 30px;
+
+  margin-bottom: 100px;
+}
+
+.trade__button_wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.test__title {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-
-  margin-bottom: 250px;
+  justify-content: center;
 }
 
-.test__button {
+.trade__button {
   display: inline-flex;
   align-items: center;
   column-gap: 80px;
@@ -42,7 +60,7 @@
   }
 }
 
-.test__button-circle {
+.trade__button-circle {
   position: relative;
 
   width: 83px;
@@ -52,13 +70,20 @@
   opacity: 0.5;
 }
 
-.test__button_arrow {
+.trade__button_arrow {
   position: absolute;
 
   opacity: 0;
   left: -50%;
   top: 50%;
   transform: translate(-40%, -50%);
+}
+
+.trade_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .createCircleAnimation {
