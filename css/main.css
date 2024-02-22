@@ -1427,15 +1427,11 @@ a {
 }
 
 .security__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .security__card {

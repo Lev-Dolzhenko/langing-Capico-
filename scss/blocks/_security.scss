@@ -18,11 +18,15 @@
 }
 
 .security__cards {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // gap: 40px;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  flex-wrap: wrap;
 }
+
 
 .security__card {
   border: 1px solid rgb(64, 46, 92);
