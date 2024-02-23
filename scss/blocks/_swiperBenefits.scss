@@ -1,0 +1,78 @@
+.mySwiper_benefits {
+  height: 350px;
+  max-width: 620px;
+}
+
+.swiper-slide_benefits {
+  display: flex !important;
+  align-items: start;
+  column-gap: 28px;
+
+  padding: 30px 65px;
+
+  border-radius: 37px;
+  background: rgb(135, 99, 204);
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+
+    border: 0.89px solid rgb(180, 150, 238);
+    border-radius: 44px;
+
+    padding: 18px 28px;
+
+    opacity: 0.9;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 120%;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: $colorWhite;
+      color: rgb(180, 150, 238);
+
+      svg path {
+        stroke: rgb(180, 150, 238);
+      }
+    }
+  }
+
+  h5 {
+    margin-bottom: 18px;
+  }
+
+  p {
+    margin-bottom: 37px;
+  }
+}
+.swiper_benefits-text {
+  max-width: 300px;
+}
+
+.benefits__wrapper_buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  margin-right: 50px;
+}
+
+.benefits__button {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 44.75px;
+
+  padding: 45px 25px;
+
+  opacity: 0.3;
+
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}

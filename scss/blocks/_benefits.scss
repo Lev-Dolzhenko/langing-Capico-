@@ -1,0 +1,51 @@
+.benefits {
+  padding: 50px 0 70px;
+  background: linear-gradient(
+    to bottom left,
+    rgb(212, 204, 244) 0%,
+    rgb(95, 41, 183)
+  );
+}
+
+.benefits__cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 90px;
+}
+
+.benefits__row {
+  display: flex;
+  align-items: center;
+}
+
+.benefits__list {
+    margin-left: 150px;
+}
+
+.benefits__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;   
+  
+  opacity: 0.5;
+}
+
+.benefits__item-active {
+    position: relative;
+    opacity: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        border-radius: 10px;
+        left: -14%;
+        top: 50%; 
+        transform: translateY(-50%);
+        background-color: $colorWhite;
+
+    }
+}

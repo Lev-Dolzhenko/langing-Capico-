@@ -72,7 +72,7 @@ buttonManage.addEventListener("mouseleave", () => {
 
 const testButton = document.querySelector(".test__button");
 const testButtonCircle = document.querySelector(".test__button-circle");
-const testButtonArrow = document.querySelector('.test__button_arrow')
+const testButtonArrow = document.querySelector(".test__button_arrow");
 
 testButton.addEventListener("mouseover", () => {
   testButtonCircle.classList.remove("createCircleAnimationReverse");
@@ -98,7 +98,7 @@ testButton.addEventListener("mouseleave", () => {
 
 const tradeButton = document.querySelector(".trade__button");
 const tradeButtonCircle = document.querySelector(".trade__button-circle");
-const tradeButtonArrow = document.querySelector('.trade__button_arrow')
+const tradeButtonArrow = document.querySelector(".trade__button_arrow");
 
 tradeButton.addEventListener("mouseover", () => {
   tradeButtonCircle.classList.remove("createCircleAnimationReverse");
@@ -132,5 +132,17 @@ var swiper = new Swiper(".mySwiper_work", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+  },
+});
+
+//init swiper benefits
+
+var swiper = new Swiper(".mySwiper_benefits", {
+  direction: "vertical",
+  spaceBetween: "20px",
+  loop: true,
+  navigation: {
+    nextEl: ".benefits__button_prev",
+    prevEl: ".benefits__button_next",
   },
 });
