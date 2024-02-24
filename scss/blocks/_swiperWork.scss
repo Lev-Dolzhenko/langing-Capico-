@@ -15,7 +15,7 @@
   //   max-height: 455px;
   height: initial !important;
 
-  padding: 49px 39px 30px;
+  padding: clamp(30px, 1.443rem + 2.16vw, 49px) clamp(30px, 1.67rem + 1.02vw, 39px) clamp(20px, 1.023rem + 1.14vw, 30px);
 
   opacity: 0.7;
 }
@@ -46,8 +46,8 @@
   align-items: center;
   justify-content: center;
 
-  width: 94px;
-  height: 94px;
+  width: clamp(50px, 2.125rem + 5vw, 94px);
+  height: clamp(50px, 2.125rem + 5vw, 94px);
 
   border: 1px solid rgb(180, 180, 180);
   border-radius: 70px;
@@ -56,5 +56,12 @@
 
   &:hover {
     width: 195px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .mySwiper_work {
+    margin-left: unset !important;
   }
 }

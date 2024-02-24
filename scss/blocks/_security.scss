@@ -10,11 +10,11 @@
 }
 
 .security__image {
-    margin-bottom: unset;
+  margin-bottom: 40px;
 }
 
 .security_subtitle {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .security__cards {
@@ -26,7 +26,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
-
 
 .security__card {
   border: 1px solid rgb(64, 46, 92);
@@ -43,3 +42,27 @@
   justify-content: start;
 }
 
+@media screen and (max-width: 1300px) {
+  .security__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .security__card {
+    max-width: unset;
+    width: 100%;
+    &:nth-child(3) {
+      grid-column: span 2;
+    }
+  }
+}
+
+@include mediaSemiTablet {
+  .security__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .security__card:nth-child(3) {
+    grid-column: unset;
+  }
+}

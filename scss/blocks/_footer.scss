@@ -125,3 +125,21 @@
     line-height: 99%;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .footer__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .socials__list {
+    margin-bottom: 30px;
+  }
+}
+
+@include mediaSemiTablet {
+  .footer__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

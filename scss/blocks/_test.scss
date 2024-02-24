@@ -4,7 +4,8 @@
 }
 .test__bg {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: -1;
 }
 .test__info {
@@ -18,7 +19,7 @@
   margin: 0 auto;
   text-align: center;
 
-  margin-bottom: 250px;
+  margin-bottom: clamp(70px, 0.284rem + 20.45vw, 250px);
 }
 
 .test__button {
@@ -29,9 +30,9 @@
   border-radius: 70px;
   background: rgb(95, 41, 183);
 
-  padding: 24px;
+  padding: clamp(18px, 0.989rem + 0.68vw, 24px);
 
-  font-size: 45px;
+  font-size: clamp(16px, 0.341rem + 3.3vw, 45px);
   font-weight: 400;
   line-height: 93%;
 
@@ -75,4 +76,10 @@
 
 .createArrowAnimationReverse {
   animation: buttonArrowReverse 0.5s ease-out forwards;
+}
+
+@include mediaSemiTablet {
+  .test__button-circle {
+    display: none;
+  }
 }

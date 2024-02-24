@@ -1,21 +1,21 @@
 .features {
     .features__row:nth-child(1) {
-        margin-bottom: 240px;
+        margin-bottom: clamp(100px, 3.068rem + 15.91vw, 240px);
     }   
 
     .features__row:nth-child(2) {
-        margin-bottom: 200px;
+        margin-bottom: clamp(100px, 3.977rem + 11.36vw, 200px);
     }   
 
     .features__row:nth-child(3) {
         align-items: start;
     }   
 
-    padding-bottom: 220px;
+    padding-bottom: clamp(120px, 5.227rem + 11.36vw, 220px);
 }
 
 .features__col {
-    margin-top: 100px;
+    margin-top: clamp(60px, 2.841rem + 4.55vw, 100px);
 
     display: flex;
     flex-direction: column;

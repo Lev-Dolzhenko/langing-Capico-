@@ -24,7 +24,7 @@
   padding-left: 20px;
   padding-top: 20px;
 
-  margin-bottom: 170px;
+  margin-bottom: clamp(70px, 2.102rem + 11.36vw, 170px);
 }
 
 .trade__subtitle {
@@ -32,7 +32,7 @@
 
   padding-left: 30px;
 
-  margin-bottom: 100px;
+  margin-bottom: clamp(30px, 0.284rem + 7.95vw, 100px);
 }
 
 .trade__button_wrapper {
@@ -44,14 +44,14 @@
 .trade__button {
   display: inline-flex;
   align-items: center;
-  column-gap: 80px;
+  column-gap: clamp(8px, -1.136rem + 8.18vw, 80px);
 
   border-radius: 70px;
   background: rgb(95, 41, 183);
 
-  padding: 24px;
+  padding: clamp(18px, 0.989rem + 0.68vw, 24px);
 
-  font-size: 45px;
+  font-size: clamp(16px, 0.341rem + 3.3vw, 45px);
   font-weight: 400;
   line-height: 93%;
 
@@ -83,9 +83,11 @@
 
 .trade_bg {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
   z-index: -1;
+
+  transform: translateY(-50%);
 }
 
 .createCircleAnimation {
@@ -102,4 +104,10 @@
 
 .createArrowAnimationReverse {
   animation: buttonArrowReverse 0.5s ease-out forwards;
+}
+
+@include mediaSemiTablet {
+  .trade__button-circle {
+    display: none;
+  }
 }

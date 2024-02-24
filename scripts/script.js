@@ -127,6 +127,20 @@ tradeButton.addEventListener("mouseleave", () => {
 var swiper = new Swiper(".mySwiper_work", {
   slidesPerView: 3.5,
   spaceBetween: 30,
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    800: {
+      slidesPerView: 1.5
+    },
+    1000: {
+      slidesPerView: 2.5
+    },
+    1300: {
+      slidesPerView: 3.5
+    }
+  },
   navigation: {
     nextEl: ".swiper-button-next_work",
     prevEl: ".swiper-button-prev_work ",

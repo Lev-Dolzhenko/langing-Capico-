@@ -91,7 +91,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 130px;
+  font-size: clamp(1.875rem, -0.398rem + 11.36vw, 8.125rem);
   font-weight: 400;
   line-height: 93%;
 
@@ -108,7 +108,7 @@ a {
 }
 
 .title3 {
-  font-size: 90px;
+  font-size: clamp(35px, 0.938rem + 6.25vw, 90px);
   font-weight: 400;
 
   &_partners {
@@ -139,7 +139,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 100px;
+    // font-size: 100px;
     font-weight: 400;
     line-height: 93%;
   }
@@ -206,7 +206,7 @@ a {
   }
 
   &_features {
-    font-size: 35px;
+    font-size: clamp(16px, 0.568rem + 2.16vw, 35px);
     font-weight: 400;
     line-height: 108%;
     color: $colorWhite;
@@ -230,7 +230,7 @@ a {
   }
 
   &_trade {
-    font-size: 30px;
+    font-size: clamp(16px, 0.682rem + 1.59vw, 30px);
     font-weight: 400;
     line-height: 120%;
   }
