@@ -6,8 +6,8 @@
 .info__title {
   max-width: 765px;
 
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: clamp(40px, 1.591rem + 4.55vw, 80px);
+  margin-bottom: clamp(20px, 0.795rem + 2.27vw, 40px);
 }
 
 .info__subtitle {
@@ -63,4 +63,11 @@
 
 .circleAnimationHeaderReverse {
     animation: circleAnimationHeaderReverse 0.5s ease-out forwards;
+}
+
+@include mediaTablet {
+  .header__info {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }

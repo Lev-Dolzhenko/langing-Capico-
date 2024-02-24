@@ -1,16 +1,16 @@
 .numbers {
   position: relative;
-  padding-bottom: 130px;
+  padding-bottom: clamp(70px, 3.011rem + 6.82vw, 130px);
 }
 .numbers__text {
-  margin-top: 72px;
+  margin-top: clamp(30px, 0.966rem + 4.55vw, 70px);
 }
 .numbers__title {
   margin-bottom: 21px;
 }
 
 .numbers__subtitle {
-  margin-bottom: 281px;
+  margin-bottom: clamp(100px, 2.159rem + 20.45vw, 280px);
 }
 
 .numbers__span {
@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  column-gap: 23px;
+  column-gap: 20px;
 }
 .numbers__item {
   border: 1px solid $colorAccent;
@@ -44,10 +44,10 @@
 
   display: flex;
   flex-direction: column;
-  row-gap: 100px;
+  row-gap: clamp(50px, 1.989rem + 5.68vw, 100px);
 }
 .numbers__traiders {
-  font-size: 80px;
+  font-size: clamp(60px, 3.295rem + 2.27vw, 80px);
   font-weight: 400;
   line-height: 93%;
 }
@@ -57,7 +57,7 @@
   line-height: 103%;
 }
 .numbers__deals {
-  font-size: 80px;
+  font-size: clamp(60px, 3.295rem + 2.27vw, 80px);
   font-weight: 400;
   line-height: 93%;
 }
@@ -65,4 +65,16 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 103%;
+}
+
+@include mediaTablet {
+  .numbers__list {
+    flex-direction: column;
+    row-gap: 20px;
+
+    margin-top: 30px;
+  }
+  .numbers__item {
+    width: 100%;
+  }
 }

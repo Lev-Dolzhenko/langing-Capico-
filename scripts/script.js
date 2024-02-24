@@ -38,6 +38,7 @@ buttonManage.addEventListener("click", function (event) {
   overlayVideo.classList.remove("overlayVideoReverse");
   manageFrame.classList.add("manageFrameAnimation");
   overlayVideo.classList.add("overlayVideo");
+  document.body.style.overflow = 'hidden'
 });
 
 const handleClickOutside = (event) => {
@@ -51,7 +52,8 @@ const handleClickOutside = (event) => {
       overlayVideo.classList.remove("overlayVideo");
       manageFrame.classList.add("manageFrameAnimationReverse");
       overlayVideo.classList.add("overlayVideoReverse");
-      console.log("not elem");
+      document.body.style.overflow = 'visible'
+
     }
   }
 };

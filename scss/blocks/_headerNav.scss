@@ -4,8 +4,9 @@
   background-image: url(/content/header/headerBg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
-  padding-bottom: 111px;
+  padding-bottom: clamp(80px, 4.318rem + 3.41vw, 110px);
 
   &::after {
     // content: "";
@@ -24,7 +25,7 @@
 .header__row {
   display: flex;
   align-items: center;
-  padding: 30px 0;
+  padding: clamp(15px, 0.597rem + 1.7vw, 30px) 0;
 
   color: $colorWhite;
   font-family: $nekst;
@@ -76,5 +77,59 @@
     path {
       stroke: $colorAccent;
     }
+  }
+}
+
+.burder__button {
+  display: none;
+}
+.burger-checkbox {
+}
+.burger {
+}
+
+@include mediaBigTablet {
+  .header__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .header__lang {
+    justify-self: end;
+    margin-right: unset;
+    order: 4;
+  }
+
+  .header__button {
+    justify-self: end;
+  }
+
+  .header__logotype {
+    margin-right: unset;
+  }
+
+  .header__nav {
+    order: 2;
+  }
+}
+
+
+@include mediaTablet {
+  .header__nav {
+    display: none;
+  }
+
+  .header__lang {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .burder__button {
+    display: block;
+    justify-self: end;
   }
 }

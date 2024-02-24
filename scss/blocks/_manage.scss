@@ -1,5 +1,5 @@
 .manage {
-  padding: 93px 0 39px;
+  padding: clamp(60px, 3.068rem + 3.41vw, 90px) 0 40px;
 
   border-radius: 40px 40px 0 0;
   box-shadow: 0 -10px 10px $colorAccent;
@@ -13,11 +13,13 @@
 .manage__video {
   position: relative;
 
+  overflow: hidden;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  height: 600px;
+  height: clamp(300px, 11.932rem + 34.09vw, 600px);
   max-width: 1030px;
   width: 100%;
 
@@ -40,13 +42,14 @@
   border-radius: 50%;
   background: linear-gradient(180deg, rgb(90, 47, 237), rgb(143, 0, 255) 100%);
 
-  width: 90px;
-  height: 90px;
+  width: clamp(70px, 3.92rem + 2.27vw, 90px);
+  height: clamp(70px, 3.92rem + 2.27vw, 90px);
 
   img {
     transform: rotate(0deg);
     z-index: 1;
     padding-left: 6px;
+    width: clamp(35px, 2.074rem + 0.57vw, 40px);
   }
 
   transition: all 0.2s linear;
@@ -56,6 +59,7 @@
     transform: scale(1.1);
   }
 }
+
 
 .manageVideoAnimation {
   animation: boxShadowVideo 0.1s linear forwards;
@@ -70,11 +74,13 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  // display: none;
   visibility: hidden;
   opacity: 0;
 
   z-index: 10;
+
+  width: clamp(300px, 8.295rem + 52.27vw, 760px);
+  height: clamp(200px, 7.955rem + 22.73vw, 400px);
 }
 
 .manageFrameAnimation {

@@ -29,11 +29,11 @@ a {
 }
 
 .default__title {
-  margin-left: 42px;
+  margin-left: clamp(10px, -0.102rem + 3.64vw, 42px);
 }
 
 .default__subtitle {
-  margin-right: 42px;
+  margin-right: clamp(10px, -0.102rem + 3.64vw, 42px);
 
   &_trade {
     margin-left: auto;
@@ -54,7 +54,7 @@ a {
   margin-bottom: 130px;
 }
 
-.card_ .overlay {
+.card_, .overlay {
   &_video {
     position: fixed;
     left: 0;
@@ -81,7 +81,7 @@ a {
 }
 
 .title1 {
-  font-size: 102px;
+  font-size: clamp(50px, 1.989rem + 5.68vw, 100px);
   font-weight: 400;
   line-height: 98%;
 }
@@ -96,7 +96,7 @@ a {
   line-height: 93%;
 
   &_numbers {
-    font-size: 250px;
+    font-size: clamp(74px, 0.625rem + 20vw, 250px);
     font-weight: 400;
     line-height: 93%;
   }
@@ -150,7 +150,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 70px;
+  font-size: clamp(40px, 1.818rem + 3.41vw, 70px);
   font-weight: 400;
   line-height: 113%;
 
@@ -161,7 +161,7 @@ a {
 
 .title5 {
   &_default {
-    font-size: 60px;
+    font-size: clamp(30px, 1.193rem + 3.41vw, 60px);
     font-weight: 400;
     line-height: 93%;
   }
@@ -181,7 +181,7 @@ a {
 
 .subtitle {
   &_info {
-    font-size: 30px;
+    font-size: clamp(20px, 1.023rem + 1.14vw, 30px);
     font-weight: 400;
     line-height: 113%;
 
@@ -194,13 +194,13 @@ a {
 
   &_default {
     color: rgb(145, 145, 145);
-    font-size: 15px;
+    font-size: clamp(10px, 0.511rem + 0.57vw, 15px);
     font-weight: 400;
     line-height: 103%;
   }
 
   &_numbers {
-    font-size: 40px;
+    font-size: clamp(20px, 0.795rem + 2.27vw, 40px);
     font-weight: 400;
     line-height: 103%;
   }
